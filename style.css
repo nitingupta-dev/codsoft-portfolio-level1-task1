@@ -1,9 +1,3 @@
-/* =========================================================
-   NITIN GUPTA — PORTFOLIO STYLESHEET
-   Dark / Premium / Modern developer portfolio theme
-   ========================================================= */
-
-/* ---------- CSS VARIABLES ---------- */
 :root {
   --bg-primary: #0a0e17;
   --bg-secondary: #0f1420;
@@ -33,7 +27,6 @@
   --transition: 0.3s ease;
 }
 
-/* ---------- RESET ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -112,7 +105,6 @@ h1, h2, h3, h4 {
   font-size: 1.02rem;
 }
 
-/* ---------- PRELOADER ---------- */
 #preloader {
   position: fixed;
   inset: 0;
@@ -143,22 +135,23 @@ h1, h2, h3, h4 {
   50% { opacity: 1; transform: scale(1.05); }
 }
 
-/* ---------- SCROLLBAR ---------- */
 ::-webkit-scrollbar {
   width: 10px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-color);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-blue);
 }
 
-/* ---------- NAVBAR ---------- */
 .navbar {
   position: fixed;
   top: 0;
@@ -232,7 +225,6 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -251,14 +243,15 @@ h1, h2, h3, h4 {
 .hamburger.open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
 
-/* ---------- BUTTONS ---------- */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -312,7 +305,6 @@ h1, h2, h3, h4 {
   background: rgba(76, 141, 255, 0.08);
 }
 
-/* ---------- HERO ---------- */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -407,7 +399,6 @@ h1, h2, h3, h4 {
   transform: translateY(-3px);
 }
 
-/* Hero code card */
 .hero-visual {
   display: flex;
   justify-content: center;
@@ -475,7 +466,6 @@ h1, h2, h3, h4 {
   50% { transform: translate(-50%, 8px); }
 }
 
-/* ---------- ABOUT ---------- */
 .about-grid {
   display: grid;
   grid-template-columns: 0.8fr 1.2fr;
@@ -580,7 +570,6 @@ h1, h2, h3, h4 {
   color: var(--accent-blue);
 }
 
-/* ---------- SKILLS ---------- */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -617,7 +606,6 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-glow);
 }
 
-/* ---------- PROJECTS ---------- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -640,7 +628,6 @@ h1, h2, h3, h4 {
   box-shadow: var(--shadow-soft), var(--shadow-glow);
 }
 
-/* Featured project card — visually prominent, same design language */
 .project-card-featured {
   position: relative;
   grid-column: span 2;
@@ -741,7 +728,6 @@ h1, h2, h3, h4 {
   flex-wrap: wrap;
 }
 
-/* ---------- RESUME ---------- */
 .resume-box {
   max-width: 560px;
   margin: 0 auto;
@@ -783,7 +769,6 @@ h1, h2, h3, h4 {
   color: var(--accent-blue-light);
 }
 
-/* ---------- EDUCATION TIMELINE ---------- */
 .timeline {
   max-width: 700px;
   margin: 0 auto;
@@ -839,7 +824,6 @@ h1, h2, h3, h4 {
   color: var(--accent-cyan);
 }
 
-/* ---------- CERTIFICATIONS ---------- */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -872,7 +856,6 @@ h1, h2, h3, h4 {
   color: var(--text-secondary);
 }
 
-/* ---------- STRENGTHS ---------- */
 .strengths-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -906,7 +889,6 @@ h1, h2, h3, h4 {
   font-weight: 500;
 }
 
-/* ---------- CONTACT ---------- */
 .contact-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -1019,7 +1001,6 @@ h1, h2, h3, h4 {
   min-height: 1.2em;
 }
 
-/* ---------- FOOTER ---------- */
 .footer {
   border-top: 1px solid var(--border-color);
   padding: 44px 0 26px;
@@ -1075,7 +1056,6 @@ h1, h2, h3, h4 {
   color: var(--text-muted);
 }
 
-/* ---------- BACK TO TOP ---------- */
 .back-to-top {
   position: fixed;
   bottom: 26px;
@@ -1106,7 +1086,6 @@ h1, h2, h3, h4 {
   transform: translateY(-4px);
 }
 
-/* ---------- FADE-IN ANIMATION ---------- */
 .fade-in {
   opacity: 0;
   transform: translateY(24px);
@@ -1118,7 +1097,6 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
-/* ---------- RESPONSIVE ---------- */
 @media (max-width: 992px) {
   .hero-container {
     grid-template-columns: 1fr;
